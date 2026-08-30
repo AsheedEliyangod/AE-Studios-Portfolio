@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AE Studios — Unity game developer focused on gameplay programming, 3D game development, and immersive interactive experiences.">
+    <meta name="keywords" content="Unity game development, C# gameplay programming, 3D games, indie game developer, AE Studios">
+    <meta name="theme-color" content="#0a0e1f">
+    <meta name="color-scheme" content="dark">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AE Studios — Game Developer Portfolio">
+    <meta property="og:description" content="Unity game developer focused on gameplay programming, interactive systems, and immersive 3D experiences.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/AEStudios favicon.png">
+
+    <title>AE Studios — Game Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="#home" class="logo">
+                    <img src="assets/AEStudios.png" alt="AE Studios logo" class="logo-img">
+                    AE Studios
+                </a>
+            </div>
+
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" id="hamburger">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home"     class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#assets"   class="nav-link" data-section="assets">Assets</a></li>
+                <li><a href="#about"    class="nav-link" data-section="about">About</a></li>
+                <li><a href="#contact"  class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================================================================== -->
+    <!-- HERO SECTION                                                         -->
+    <!-- ================================================================== -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Unity Game Developer</div>
+            <h1 class="hero-title">Building Games.<br><span class="hero-title-accent">Creating Experiences.</span></h1>
+            <p class="hero-subtitle">Unity game developer focused on gameplay programming, interactive systems, and immersive 3D experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary" id="heroViewProjects">View Projects</a>
+                <a href="#assets"   class="btn btn-secondary" id="heroViewAssets">View Assets</a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- FEATURED PROJECTS (HOME — curated preview)                          -->
+    <!-- ================================================================== -->
+    <section id="featured" class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A selection of games and interactive experiences I've built.</p>
+            </div>
+
+            <div class="featured-grid">
+
+                <!-- Glitch -->
+                <article class="featured-card" id="featured-glitch">
+                    <div class="featured-card-image">
+                        <img src="assets/Project/Glitch/Glitch.png" alt="Glitch — gameplay screenshot" loading="eager">
+                        <div class="featured-card-overlay">
+                            <a href="#projects" class="btn btn-primary btn-sm" id="featGlitchBtn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="featured-card-body">
+                        <div class="featured-card-meta">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">3D</span>
+                        </div>
+                        <h3 class="featured-card-title">Glitch</h3>
+                        <p class="featured-card-desc">A third-person game project focused on exploration, atmosphere, and immersive environmental gameplay.</p>
+                        <a href="#projects" class="featured-card-link" id="featGlitchLink">View Project →</a>
+                    </div>
+                </article>
+
+                <!-- Mythora Legends -->
+                <article class="featured-card" id="featured-mythora">
+                    <div class="featured-card-image">
+                        <img src="assets/Project/Mythora Legends/Mythora.png" alt="Mythora Legends — gameplay screenshot" loading="eager">
+                        <div class="featured-card-overlay">
+                            <a href="#projects" class="btn btn-primary btn-sm" id="featMythoraBtn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="featured-card-body">
+                        <div class="featured-card-meta">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">3D</span>
+                        </div>
+                        <h3 class="featured-card-title">Mythora Legends</h3>
+                        <p class="featured-card-desc">A third-person fantasy adventure combining exploration, combat, and a stylized 3D world.</p>
+                        <a href="#projects" class="featured-card-link" id="featMythoraLink">View Project →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- CORE SKILLS                                                          -->
+    <!-- ================================================================== -->
+    <section class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Skills</h2>
+                <p class="section-subtitle">Technologies and disciplines I work with.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-chip">
+                    <span class="skill-icon">🎮</span>
+                    <span>Unity Development</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">💻</span>
+                    <span>C# Gameplay Programming</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">🌐</span>
+                    <span>3D Game Development</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">⚙️</span>
+                    <span>Gameplay Systems</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">🕹️</span>
+                    <span>Character Controllers</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">⚔️</span>
+                    <span>Combat Systems</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">🗺️</span>
+                    <span>Interactive Environments</span>
+                </div>
+                <div class="skill-chip">
+                    <span class="skill-icon">📐</span>
+                    <span>Level Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- HOME CTA                                                             -->
+    <!-- ================================================================== -->
+    <section class="home-cta">
+        <div class="container">
+            <div class="home-cta-inner">
+                <h2 class="home-cta-title">Have a project in mind?</h2>
+                <p class="home-cta-sub">Let's build something interesting.</p>
+                <a href="#contact" class="btn btn-primary btn-lg" id="homeCtaBtn">Contact AE Studios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- PROJECTS PAGE SECTION — detailed full portfolio                     -->
+    <!-- ================================================================== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Games and interactive experiences I've developed with Unity.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="projects-filters" id="projectFilters">
+                <button class="filter-btn active" data-filter="all"   id="filterAll">All</button>
+                <button class="filter-btn"         data-filter="games" id="filterGames">Games</button>
+                <button class="filter-btn"         data-filter="unity" id="filterUnity">Unity</button>
+                <button class="filter-btn"         data-filter="3d"    id="filter3d">3D</button>
+            </div>
+
+            <!-- Detailed Project Cards rendered by JS -->
+            <div class="detailed-projects-list" id="detailedProjectsList"></div>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- ASSETS SECTION                                                       -->
+    <!-- ================================================================== -->
+    <section id="assets" class="assets-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Unity Assets</h2>
+                <p class="section-subtitle">Professional-quality 3D assets designed for game developers.</p>
+            </div>
+
+            <!-- Asset Filters -->
+            <div class="assets-filters" id="assetFilters">
+                <button class="filter-btn active" data-filter="all"       id="assetFilterAll">All</button>
+                <button class="filter-btn"         data-filter="3d-assets" id="assetFilter3d">3D Assets</button>
+            </div>
+
+            <!-- Asset grid rendered by JS -->
+            <div class="assets-grid" id="assetsGrid"></div>
+
+            <!-- Coming Soon -->
+            <div class="assets-coming-soon">
+                <div class="coming-soon-inner">
+                    <span class="coming-soon-icon">📦</span>
+                    <h3 class="coming-soon-title">More Assets Coming Soon</h3>
+                    <p class="coming-soon-text">Additional 3D assets and Unity tools will be added here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- ABOUT SECTION                                                        -->
+    <!-- ================================================================== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About AE Studios</h2>
+                <p class="section-subtitle">An independent game development studio built on a passion for creating interactive experiences.</p>
+            </div>
+
+            <div class="about-layout">
+
+                <!-- Intro -->
+                <div class="about-intro-block">
+                    <p class="about-lead">AE Studios is focused on Unity game development — building third-person games, designing gameplay systems, and crafting 3D environments that feel alive and purposeful.</p>
+                </div>
+
+                <!-- What I Build -->
+                <div class="about-block">
+                    <h3 class="about-block-title">What I Build</h3>
+                    <div class="about-cards-grid">
+                        <div class="about-info-card">
+                            <div class="about-card-icon">🎮</div>
+                            <h4>Game Development</h4>
+                            <p>Designing and programming gameplay experiences in Unity — from concept to working prototype.</p>
+                        </div>
+                        <div class="about-info-card">
+                            <div class="about-card-icon">💡</div>
+                            <h4>Gameplay Systems</h4>
+                            <p>Building character controllers, combat systems, interaction logic, and game mechanics in C#.</p>
+                        </div>
+                        <div class="about-info-card">
+                            <div class="about-card-icon">🌐</div>
+                            <h4>3D Environments</h4>
+                            <p>Creating interactive 3D game worlds with level design, environmental details, and atmosphere.</p>
+                        </div>
+                        <div class="about-info-card">
+                            <div class="about-card-icon">📦</div>
+                            <h4>3D Assets</h4>
+                            <p>Producing optimized 3D models and props built for real-time Unity game environments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Skills -->
+                <div class="about-block">
+                    <h3 class="about-block-title">Core Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Gameplay Programming</span>
+                        <span class="skill-tag">Third-Person Controllers</span>
+                        <span class="skill-tag">Combat Systems</span>
+                        <span class="skill-tag">Level Design</span>
+                        <span class="skill-tag">3D Game Development</span>
+                        <span class="skill-tag">Interactive Environments</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="about-block">
+                    <h3 class="about-block-title">Tools &amp; Technologies</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <span class="tool-name">Unity</span>
+                            <span class="tool-desc">Primary game engine</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-name">C#</span>
+                            <span class="tool-desc">Gameplay scripting</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-name">Blender</span>
+                            <span class="tool-desc">3D modeling &amp; assets</span>
+                        </div>
+                        <div class="tool-item">
+                            <span class="tool-name">Git</span>
+                            <span class="tool-desc">Version control</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================== -->
+    <!-- CONTACT SECTION                                                      -->
+    <!-- ================================================================== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build Something</h2>
+                <p class="section-subtitle">Have a project, collaboration, or idea you'd like to discuss?</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-card">
+                    <div class="contact-card-header">
+                        <h3 class="contact-card-title">Get in Touch</h3>
+                        <p class="contact-card-desc">Currently creating games, 3D assets, and interactive experiences.</p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-method-label">Email</span>
+                            <span class="contact-method-value">asheedeliyangod@gmail.com</span>
+                            <a href="mailto:asheedeliyangod@gmail.com" class="btn btn-primary btn-sm" id="contactEmailBtn">Send Email</a>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-method-label">Connect</span>
+                            <p class="contact-method-sub">Find the work and connect on social platforms.</p>
+                            <div class="social-links">
+                                <a href="https://github.com/AsheedEliyangod" class="social-link" aria-label="GitHub" id="socialGithub" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.261.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.605-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/asheed-eliyangod-79802b350/" class="social-link" aria-label="LinkedIn" id="socialLinkedin" target="_blank" rel="noopener noreferrer">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.722-2.004 1.418-.103.249-.129.597-.129.946v5.441h-3.554s.05-8.814 0-9.737h3.554v1.378c-.429-.686-1.195-1.662-2.91-1.662-2.12 0-3.714 1.388-3.714 4.372v5.649H2.896V5.934h3.554v.842c.429-.686 1.195-1.662 2.91-1.662 2.12 0 3.714 1.388 3.714 4.372v5.649h3.373zM5.337 5.09c-1.144 0-2.093-.947-2.093-2.11 0-1.163.95-2.11 2.093-2.11s2.093.947 2.093 2.11c0 1.163-.95 2.11-2.093 2.11zm1.778 15.362H3.56V5.934h3.555v14.518zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="footer-logo">AE Studios</span>
+                    <p class="footer-tagline">Building Games. Creating Experiences.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#assets">Assets</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AE Studios. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
